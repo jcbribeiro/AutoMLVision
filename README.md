@@ -1,6 +1,6 @@
 # AutoMLVision
 
-### Setting Up
+## Setting Up
 
 ### 1. Go to the Google Cloud Platform Console (https://console.cloud.google.com/) and activate your free trial to get 300$ credit to explore Google Cloud products.
 

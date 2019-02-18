@@ -4,12 +4,11 @@
 
 1. Go to the Google Cloud Platform Console (https://console.cloud.google.com/) and activate your free trial to get 300$ credit to explore Google Cloud products.
 
-	--- Important note ---
-	Google asks for your credit card information when you sign up for the free trial to: verify your identity; distinguish actual customers from robots. Even though you set up a billing account, you won't be charged unless you upgrade to a paid account. You might notice a $0-1 transaction from Google after you sign up. This transaction: is an authorization request to validate your account, not a permanent charge; might be converted to local currency by your bank; might appear on your statement for up to a month. Contact your bank if you have questions about the authorization.
+*Important note:* Google asks for your credit card information when you sign up for the free trial to: verify your identity; distinguish actual customers from robots. Even though you set up a billing account, you won't be charged unless you upgrade to a paid account. You might notice a $0-1 transaction from Google after you sign up. This transaction: is an authorization request to validate your account, not a permanent charge; might be converted to local currency by your bank; might appear on your statement for up to a month. Contact your bank if you have questions about the authorization.
 	
-	Tip: if do now own a credit card or don't feel comfortable sharing its information, you may create a "virtual" credit card with a small validity and limit using, for example, the "MB Way" app (wwww.mbway.pt)
+Tip: if do now own a credit card or don't feel comfortable sharing its information, you may create a "virtual" credit card with a small validity and limit using, for example, the "MB Way" app (wwww.mbway.pt)
 	
-	More info: https://cloud.google.com/free/docs/gcp-free-tier
+More info: https://cloud.google.com/free/docs/gcp-free-tier
 
 2. Create a Project. 
 
@@ -21,7 +20,7 @@ Name it "workshop-vision", for example.
 
 Go to the Google Cloud Platform Console (https://console.cloud.google.com/); open the console's left side menu; and select "Billing". You should already have a billing account (containing the free credits you were just awarded), and your project should be linked to this billing account.
 
-	More info: https://cloud.google.com/billing/docs/how-to/modify-project#enable_billing_for_a_project
+More info: https://cloud.google.com/billing/docs/how-to/modify-project#enable_billing_for_a_project
 
 4. Enable the necessary APIs for your project.
 
@@ -40,15 +39,15 @@ Save the generated Private Key File in a secure place. You'll need it later!
 Go to the Google Cloud Platform Console (https://console.cloud.google.com/) and click on the "Activate Cloud Shell" icon in top right hand corner of the header bar (use the Chrome browser if possible).
 
 Enter the following commands into the Cloud Shell. Consider the Template below, and replace 
-	- project-id with the name of your GCP project (for example, "workshop-vision")
-	- service-account-name with the name of your new service account (for example, "my-service-account")
-	- your email as the user (for example, "workshopgdgleiria@gmail.com")
+* project-id with the name of your GCP project (for example, "workshop-vision")
+* service-account-name with the name of your new service account (for example, "my-service-account")
+* your email as the user (for example, "workshopgdgleiria@gmail.com")
 
-	--- TEMPLATE ---
+#### TEMPLATE
 gcloud projects add-iam-policy-binding project-id --member="user:your-userid@your-domain" --role="roles/automl.admin"
 gcloud projects add-iam-policy-binding project-id --member=serviceAccount:service-account-name@project-id.iam.gserviceaccount.com --role="roles/automl.editor"
 
-	--- EXAMPLE --- 
+#### EXAMPLE
 gcloud projects add-iam-policy-binding workshop-vision --member="user:workshopgdgleiria@gmail.com" --role="roles/automl.admin"
 gcloud projects add-iam-policy-binding workshop-vision --member=serviceAccount:my-service-account@workshop-vision.iam.gserviceaccount.com  --role="roles/automl.editor"
 

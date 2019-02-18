@@ -82,14 +82,12 @@ import io.grpc.internal.IoUtils;
 public class MainActivity extends AppCompatActivity {
   // TODO: insert project info
   private static final String COMPUTE_REGION = null; // example: "us-central1";
-  private static final String PROJECT_ID = null; // example: "automl-ipleiria";
+  private static final String PROJECT_ID = null; // example: "workshop-vision";
   private static final String MODEL_ID = null; // example: "ICN293500301081240869";
-  private static final String SCORE_THRESHOLD = null; // example: "0.4";
-  private static final Integer JSON_RAW_RESOURCE_ID = null; // example: R.raw.automlipleiria;
+  private static final String SCORE_THRESHOLD = null; // example: "0.7";
+  private static final Integer JSON_RAW_RESOURCE_ID = null; // example: R.raw.workshopvision;
 
   public static final String FILE_NAME = "temp.jpg";
-  private static final String ANDROID_CERT_HEADER = "X-Android-Cert";
-  private static final String ANDROID_PACKAGE_HEADER = "X-Android-Package";
 
   private static final String TAG = MainActivity.class.getSimpleName();
   private static final int GALLERY_PERMISSIONS_REQUEST = 0;

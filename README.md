@@ -1,4 +1,6 @@
-# AutoMLVision
+# Auto ML Vision Sample
+
+Adapted from: https://github.com/GoogleCloudPlatform/java-docs-samples/tree/master/vision/automl
 
 ## 1. Setting Up
 
